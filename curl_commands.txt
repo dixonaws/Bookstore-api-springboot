@@ -1,0 +1,5 @@
+GET a book with id 2:
+curl -X GET http://localhost:8080/books/2 | python -m json.tool
+
+Create a new book entry:
+curl -i -X POST -H "Content-Type: application/json" -d '{"title":"It"}' localhost:8080/books | python -m json.tool
