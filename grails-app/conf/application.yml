@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: bookstore-api-java
+        defaultPackage: bookstore-api-springboot
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events
@@ -124,7 +124,7 @@ environments:
 
     dev-rds:
         dataSource:
-            dbCreate: create-drop
+            dbCreate: update
             url: "jdbc:mysql://bookstore.c15lzdctuff2.us-east-1.rds.amazonaws.com:3306/Bookstore"
             driverClassName: "com.mysql.jdbc.Driver"
             dialect: "org.hibernate.dialect.MySQL5InnoDBDialect"
